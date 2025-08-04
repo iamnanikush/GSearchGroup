@@ -2,84 +2,132 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gray Search Group</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
+      font-family: 'Inter', sans-serif;
       margin: 0;
-      font-family: 'Lato', sans-serif;
-      color: #1a1a1a;
+      padding: 0;
       background-color: #ffffff;
+      color: #1a1a1a;
+      line-height: 1.6;
     }
+
     header {
-      background-color: #0e1a2b;
-      color: white;
-      padding: 2rem;
-      text-align: center;
+      background-color: #f8f9fa;
+      padding: 20px 40px;
+      border-bottom: 1px solid #eaeaea;
     }
-    h1 {
-      font-family: 'Playfair Display', serif;
-      margin: 0;
-      font-size: 2.5rem;
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    h2 {
-      font-family: 'Playfair Display', serif;
-      color: #0e1a2b;
-      font-size: 1.75rem;
+
+    .logo {
+      font-weight: 600;
+      font-size: 24px;
+      color: #333;
     }
-    section {
-      padding: 2rem 1.5rem;
-      max-width: 900px;
-      margin: auto;
+
+    .nav-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
     }
+
+    .section {
+      padding: 60px 40px;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    .section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      max-width: 700px;
+    }
+
     footer {
-      background-color: #f1f1f1;
-      padding: 1rem;
+      background-color: #f8f9fa;
       text-align: center;
-      font-size: 0.9rem;
+      padding: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        margin-top: 10px;
+      }
+
+      .nav-links a {
+        margin-left: 0;
+        margin-right: 15px;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Gray Search Group</h1>
-    <p>Elite Physician & Specialist Recruiting</p>
+    <nav>
+      <div class="logo">Gray Search Group</div>
+      <div class="nav-links">
+        <a href="#about">About Us</a>
+        <a href="#press">Press</a>
+        <a href="#physicians">Physicians</a>
+        <a href="#veterinarians">Veterinarians</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
   </header>
 
-  <section>
+  <section class="section" id="about">
     <h2>About Us</h2>
-    <p>Gray Search Group specializes in placing top-tier surgeons, transplant specialists, and physicians at the most respected healthcare institutions worldwide. Our network is built on trust, precision, and discretion.</p>
+    <p>Gray Search Group is a premier recruiting firm specializing in high-level placements for doctors, surgeons, and specialists. We are committed to excellence and discretion.</p>
   </section>
 
-  <section>
-    <h2>For Physicians</h2>
-    <p>We place world-class specialists with roles that match their talent, values, and long-term goals.</p>
-  </section>
-
-  <section>
-    <h2>For Veterinarians</h2>
-    <p>We help leading veterinary hospitals and clinics find exceptional professionals to grow their practices.</p>
-  </section>
-
-  <section>
-    <h2>Our Team</h2>
-    <p>Our recruiters have decades of experience across medicine, operations, and talent management. We bring insight, speed, and precision to every search.</p>
-  </section>
-
-  <section>
+  <section class="section" id="press">
     <h2>Press</h2>
-    <p>Our firm and placements have been featured in major healthcare publications and journals. <i>(More to come)</i></p>
+    <p>Coming soon — Gray Search Group featured in leading medical and business publications.</p>
   </section>
 
-  <section>
+  <section class="section" id="physicians">
+    <h2>Physicians</h2>
+    <p>We connect top-tier physicians with institutions that align with their goals and values. Our placement services are discreet, personalized, and highly effective.</p>
+  </section>
+
+  <section class="section" id="veterinarians">
+    <h2>Veterinarians</h2>
+    <p>Gray Search Group also specializes in veterinary placements, connecting professionals with cutting-edge clinics and hospitals nationwide.</p>
+  </section>
+
+  <section class="section" id="team">
+    <h2>Team</h2>
+    <p>Our team is composed of experienced healthcare recruiters and industry specialists. More coming soon.</p>
+  </section>
+
+  <section class="section" id="contact">
     <h2>Contact</h2>
-    <p>Email: info@graysearchgroup.com</p>
-    <p>Location: New York, NY</p>
+    <p>Email: contact@graysearchgroup.com<br>Phone: (123) 456-7890<br>More detailed contact form coming soon.</p>
   </section>
 
   <footer>
     &copy; 2025 Gray Search Group. All rights reserved.
   </footer>
+
 </body>
 </html>

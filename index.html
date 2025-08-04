@@ -13,47 +13,75 @@
     }
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #1e1e1e;
+      line-height: 1.7;
     }
     header {
-      background-color: #1a1a1a;
+      background-color: #0a0a0a;
       color: white;
-      padding: 20px;
+      padding: 80px 20px;
       text-align: center;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+      margin-top: 10px;
     }
     nav {
       display: flex;
       justify-content: center;
-      background-color: #222;
-      padding: 10px 0;
+      background-color: #141414;
+      padding: 12px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
     nav a {
-      color: white;
-      margin: 0 15px;
+      color: #ddd;
+      margin: 0 20px;
       text-decoration: none;
       font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.9rem;
     }
     nav a:hover {
       color: #b4b4b4;
     }
     section {
-      padding: 60px 20px;
-      max-width: 900px;
+      padding: 80px 24px;
+      max-width: 1000px;
       margin: auto;
     }
-    section:nth-of-type(odd) {
-      background-color: #ffffff;
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+      color: #222;
+    }
+    section p {
+      font-size: 1rem;
+      color: #444;
     }
     section:nth-of-type(even) {
-      background-color: #eaeaea;
+      background-color: #ffffff;
+    }
+    section:nth-of-type(odd) {
+      background-color: #f0f0f0;
     }
     footer {
-      background-color: #1a1a1a;
+      background-color: #0a0a0a;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -107,3 +135,4 @@
   </footer>
 </body>
 </html>
+
